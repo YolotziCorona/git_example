@@ -24,6 +24,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mapFragment.getMapAsync(this);
         }
     }
+     // Botón para mostrar ubicaciones guardadas
+        Button btnSavedLocations = findViewById(R.id.btn_saved_locations);
+        btnSavedLocations.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SavedLocationsActivity.class);
+            startActivity(intent);
+        });
+    }
+
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
