@@ -20,6 +20,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_margin="50dp" />
+    
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/Logo"
+        android:contentDescription="Logo"
+        android:layout_marginBottom="24dp" />
 
         <!-- Campo de usuario -->
     <EditText
@@ -55,6 +63,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_margin="16dp"
         app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Botón de iniciar sesión -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:textColor="@color/black" />
+
+    <!-- Texto para registro -->
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿No tienes cuenta? Regístrate"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:padding="8dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
