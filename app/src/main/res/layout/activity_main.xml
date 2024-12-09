@@ -83,5 +83,14 @@
         android:layout_gravity="center"
         android:padding="8dp"/>
 
+    <!-- Botón de iniciar salir -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:textColor="@color/black" />
+    
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

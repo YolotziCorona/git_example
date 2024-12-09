@@ -24,6 +24,25 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mapFragment.getMapAsync(this);
         }
     }
+     // Botón para mostrar ubicaciones guardadas
+        Button btnSavedLocations = findViewById(R.id.btn_saved_locations);
+        btnSavedLocations.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SavedLocationsActivity.class);
+            startActivity(intent);
+    
+    // Vincular el botón con su ID
+        Button btnLogin = findViewById(R.id.btnLogin);
+
+    // Configurar el listener para mostrar un Toast al presionar el botón
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Mostrar un mensaje emergente
+                Toast.makeText(MainActivity.this, "¡Has presionado el botón de Login!", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
